@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,300;1,400;1,600&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    list-style-type: none;
+}
+
+
+body {
+    background: url("assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    color: #ffff;
+}
+header {
+    height: 100px;
+    border-bottom: 2px solid rgba(255,255,255, 0.08);
+}
+.container {
+    width: 80%;
+    margin: auto;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    column-gap: 1rem;
+}
+
+header nav ul li a:hover{
+    color: #25b2ce;
+}
+
+
+
+header nav .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+
+header nav .menu .menu-btn:hover {
+    opacity: 0.3;
+}
+
+header nav .menu .menu-btn {
+    color: #0ba2c0;
+    background: rgba(255,255,255, 0.08);;
+    padding: 12px 24px;
+   border-radius: 50px;
+}
+header nav .menu-btn {
+    column-gap: 1rem;
+}
+
+
+
+.content {
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.content p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.content .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 2rem;
+}
+
+.content .links a {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 56px;
+}
+
+
+.content .links a:hover {
+    color: white;
+    background-color: #0ba2c0;
+}
+@media (max-width: 760px) {
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+    .menu-btn {
+        display: none;
+    }
+
+    .content {
+        padding-top: 50px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .content .links a {
+        padding: 14px;
+    }
+
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        align-items: center;
+    }
+
+}
+
